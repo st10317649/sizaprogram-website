@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Siza Program</title>
+               <link rel="stylesheet" href="style.css">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="Script.js"></script>
+      </head>
+      <body>
+            <section class="header">
+               <nav>
+                  <a href="Home.html"> <img src="images/Siza.png"> </a>
+                  <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                              <li> <a href="Home.html">HOME</a></li>
+                              <li> <a href="About us.html">ABOUT</a</li>
+                              <li> <a href="Stories.html">STORIES</a> </li>
+                              <li> <a href="Our work.html ">OUR WORK</a></li>
+                              <li> <a href="Get involved.html">GET INVOLVED</a></li>
+                              <li> <a href="Contact us.html">CONTACT</a></li>
+                        </ul>
+                  </div>
+                  <i class="fa fa-bars" onclick="showMenu()"></i>
+               </nav>
+    
+               <div class="text-box">
+                       <h1>Welcome to the Siza program website</h1>
+                       <p>The Siza Program focuses on providing essential food support <br>
+                          and educating the underprivileged about nutrition.
+                       </p>
+                          <a href="About us.html" class="hero-btn">Visit us to know more</a>
+               </div>
+            </section>
+
+            <!--Charity stories-->
+
+            <section class="charity_stories">
+               <h1>Charity Stories</h1>
+               <p>Discover the impact of our charity work:</p>
+
+               <div class="row">
+                  <div class="col">
+                         <h3>Feeding programes</h3>
+                         <p>Our organization operates various feeding programs aimed at eradicating hunger.</p>
+                  </div>
+                  <div class="col">
+                     <h3>Nutrition</h3>
+                     <p>Empowering the needy with knowledge on nutrition for healthier lives.</p>
+                  </div>
+                  <div class="col">
+                     <h3>Health</h3>
+                     <p>Promoting well-being through proper nutrition and health management.</p>
+                  </div>
+               </div>
+
+            </section>
+
+            <!---Our work--->
+
+            <section class="our_work">
+                       <h1>Our Work</h1>
+                       <p>The siza program has provided aid to some communities in Emalahleni<br />
+                       and with much success at that.</p>
+                       <div class="row">
+                           <div class="our_work_col">
+                                     <img src="images/Nutrition-Improvement-Project-1.jpg">
+                                     <h2>NUTRITION</h2>
+                                    
+                           </div>
+                           <div class="our_work_col">
+                              <img src="images/feeding_the_hungry_together.jpg">
+                              <h2>HEALTH</h2>
+                           </div>
+                           <div class="our_work_col">
+                              <img src="images/community_based_food_programme.jpg">
+                              <h2>FOOD DISTRIBUTION</h2>
+                           </div>
+                       </div>
+            </section>
+
+            <!-----Get involved------>
+
+            <section class="get_involved">
+                        <h1>Get involved in our program<br />
+                        from anywhere in the world</h1>
+                        <a href="Get involved.html" class="hero-btn">GET INVOLVED</a>
+            </section>
+
+            <!-----Google form------>
+
+       <form class="form" onsubmit="return validateForm();" method="post" action="">
+            <div class="form">
+               <div class="title-div">
+                  <h1>RECEIVE NEWSLETTER</h1>
+               </div>
+            
+               <div class="checkbox-div">
+                  <label for="newsletter-checkbox">Please send me your weekly newsletter</label>
+                  <input type="checkbox" id="newsletter-checkbox" name="newsletter" value="yes">
+               </div>
+               
+               <div class="name-div">
+                  <div class="name">Enter your full name:</div>
+                  <div class="input-div"><input type="text" name="name" placeholder="Your answer" id="fullName"></div>
+               </div>
+            
+               <div class="gmail-div">
+                  <div class="name">Enter your email:</div>
+                  <div class="input-div"><input type="email" name="email" placeholder="Your email" id="googleEmail"></div>
+               </div>
+            
+               <div>
+                  <input class="google-btn" type="submit" name="Submit" id="botton">
+               </div>
+               <div class="last-div">
+                  <p class="never">Never submit passwords through Google Forms.</p>
+                  <p class="term">This content is neither created nor endorsed by Google, Report Abuse - Term of Service - Private Policy</p>
+                  <h2>Google Forms</h2>
+               </div>
+             
+            </div>
+            
+       </form>
+         
+            
+         
+           
+               
+         
+         
+         
+         
+         
+            
+         
+
+            <!-----Footer------>
+
+            <section class="footer">
+                     <h4>About Us</h4>
+                     <p>The <b>Siza program</b> takes an innovative approach to helping people emerge from poverty by providing nutritious meals to disadvantaged communities in South Africa, Mpumalanga. <br />
+                     </p> 
+                        <div class="icons">
+                              <i class="fa fa-facebook"></i>
+                              <i class="fa fa-instagram"></i>
+                        </div>
+                        <p align="center"><b>SIZA PROGRAM</b></p>
+                        <p align="center">siza@gmail.com</p>
+                        <p align="center">Phone number: 063 610 9536</p>
+                        <p align="center">Address: Broodryk street<br />
+                                                          10<br />
+                                                       Reyno Ridge<br />
+                                                           1049<br />
+                                                        Emalahleni<br />
+                                                       South africa</p>
+            </section>
+
+
+             <!-----JavaScript for toggle menu------>
+
+             <script>
+                     var navLinks = document.getElementById("navLinks");
+                     function showMenu(){
+                        navLinks.style.right = "0";
+                     }
+                     function hideMenu(){
+                        navLinks.style.right = "-200px";
+                     }
+             </script>
+      </body>
+</html>

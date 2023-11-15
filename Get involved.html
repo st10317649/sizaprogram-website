@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Siza Program</title>
+               <link rel="stylesheet" href="style.css">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script defer src="Script.js"></script>
+      </head>
+      <body>
+            <section class="sub_header">
+               <nav>
+                  <a href="Home.html"> <img src="images/Siza.png"> </a>
+                  <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                              <li> <a href="Home.html">HOME</a></li>
+                              <li> <a href="About us.html">ABOUT</a</li>
+                              <li> <a href="Stories.html">STORIES</a> </li>
+                              <li> <a href="Our work.html">OUR WORK</a></li>
+                              <li> <a href="Get involved.html">GET INVOLVED</a></li>
+                              <li> <a href="Contact us.html">CONTACT</a></li>
+                        </ul>
+                  </div>
+                  <i class="fa fa-bars" onclick="showMenu()"></i>
+                  
+               </nav>
+               
+               <h1>Get Involved</h1>
+     
+            </section>
+
+            <br>
+            <br>
+            <br>
+
+
+            <div class="wrapper">
+               <h2>Get Involved</h2>
+               <div id="error_message"></div>
+               <form >
+                  <div class="input_field">
+                     <input type="text" placeholder="Are you a sponsor, volunteer or client" required>
+                 </div>
+                 <div class="input_field">
+                     <input type="text" placeholder="Full name"required>
+                 </div>
+                 <div class="input_field">
+                     <input type="text" placeholder="Phone" required>
+                 </div>
+                 <div class="input_field">
+                     <input type="text" placeholder="Email" required>
+                 </div>
+                 <div class="btn">
+                     <input type="submit">
+                 </div>
+               </form>
+             </div>
+
+             <br>
+             <br>
+             <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-----Footer------>
+
+            <section class="footer">
+                     <h4>About Us</h4>
+                     <p>The <b>Siza program</b> takes an innovative approach to helping people emerge from poverty by providing nutritious meals to disadvantaged communities in South Africa, Mpumalanga. <br />
+                     </p> 
+                        <div class="icons">
+                              <i class="fa fa-facebook"></i>
+                              <i class="fa fa-instagram"></i>
+                        </div>
+                        <p align="center"><b>SIZA PROGRAM</b></p>
+                        <p align="center">siza@gmail.com</p>
+                        <p align="center">Phone number: 063 610 9536</p>
+                        <p align="center">Address: Broodryk street<br />
+                                                          10<br />
+                                                       Reyno Ridge<br />
+                                                           1049<br />
+                                                        Emalahleni<br />
+                                                       South africa</p>
+            </section>
+
+
+             <!-----JavaScript for toggle menu------>
+
+             <script>
+                     var navLinks = document.getElementById("navLinks");
+                     function showMenu(){
+                        navLinks.style.right = "0";
+                     }
+                     function hideMenu(){
+                        navLinks.style.right = "-200px";
+                     }
+             </script>
+      </body>
+</html>

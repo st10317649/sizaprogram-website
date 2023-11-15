@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Siza Program</title>
+               <link rel="stylesheet" href="style.css">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      </head>
+      <body>
+            <section class="sub_header">
+               <nav>
+                  <a href="Home.html"> <img src="images/Siza.png"> </a>
+                  <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                              <li> <a href="Home.html">HOME</a></li>
+                              <li> <a href="About us.html">ABOUT</a</li>
+                              <li> <a href="Stories.html">STORIES</a> </li>
+                              <li> <a href="Our work.html">OUR WORK</a></li>
+                              <li> <a href="Get involved.html">GET INVOLVED</a></li>
+                              <li> <a href="Contact us.html">CONTACT</a></li>
+                        </ul>
+                  </div>
+                  <i class="fa fa-bars" onclick="showMenu()"></i>
+               </nav>
+               
+               <h1>About Us</h1>
+     
+            </section>
+
+            <!-----About us content------>
+
+         <section class="about-us">
+            <div class="row">
+                  <div class="about-col">
+                     <h1>About the Siza Program: Providing Food and Nutrition for South African Communities</h1>
+                     <p>The Siza Program is a non-governmental organization (NGO) committed to breaking the cycle of poverty by offering nutritious meals and support to underprivileged communities in Mpumalanga, South Africa. <br />
+                         Since its establishment in 2023, the Siza Program has served over 1,000 healthy meals to children and elderly adults, addressing evolving local needs with initiatives like nutrition education and sports programs. <br />
+                         These efforts have led to improved health, increased school enrollment and achievement, reduced crime rates, and economic growth in the area. <br />
+                         Our program takes great pride in its mission to assist those in need and collaborate with local communities to achieve these goals. <br />
+                         While we are still in our early stages, significant progress has been made, and we are committed to ongoing development.</p>
+                           <a href="Get involved.html" class="hero-btn plum-btn">EXPLORE NOW</a>
+                  </div>
+                  <div class="about-col">
+                     <img src="images/MC-SchoolFeedingResponse-Zukiswa-scaled.webp" alt="Siza Program - School Feeding Initiative">
+                  </div>
+            </div>
+         </section>
+   
+
+            <!-----Footer------>
+
+            <section class="footer">
+                     <h4>About Us</h4>
+                     <p>The <b>Siza program</b> takes an innovative approach to helping people emerge from poverty by providing nutritious meals to disadvantaged communities in South Africa, Mpumalanga. <br />
+                     </p> 
+                        <div class="icons">
+                              <i class="fa fa-facebook"></i>
+                              <i class="fa fa-instagram"></i>
+                        </div>
+                        <p align="center"><b>SIZA PROGRAM</b></p>
+                        <p align="center">siza@gmail.com</p>
+                        <p align="center">Phone number: 063 610 9536</p>
+                        <p align="center">Address: Broodryk street<br />
+                                                          10<br />
+                                                       Reyno Ridge<br />
+                                                           1049<br />
+                                                        Emalahleni<br />
+                                                       South africa</p>
+            </section>
+
+
+             <!-----JavaScript for toggle menu------>
+
+             <script>
+                     var navLinks = document.getElementById("navLinks");
+                     function showMenu(){
+                        navLinks.style.right = "0";
+                     }
+                     function hideMenu(){
+                        navLinks.style.right = "-200px";
+                     }
+             </script>
+      </body>
+</html>

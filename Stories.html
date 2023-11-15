@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Siza Program</title>
+               <link rel="stylesheet" href="style.css">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      </head>
+      <body>
+            <section class="sub_header">
+               <nav>
+                  <a href="Home.html"> <img src="images/Siza.png"> </a>
+                  <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                              <li> <a href="Home.html">HOME</a></li>
+                              <li> <a href="About us.html">ABOUT</a</li>
+                              <li> <a href="Stories.html">STORIES</a> </li>
+                              <li> <a href="Our work.html">OUR WORK</a></li>
+                              <li> <a href="Get involved.html">GET INVOLVED</a></li>
+                              <li> <a href="Contact us.html">CONTACT</a></li>
+                        </ul>
+                  </div>
+                  <i class="fa fa-bars" onclick="showMenu()"></i>
+               </nav>
+               
+               <h1>Charity Stories</h1>
+     
+            </section>
+
+            <!-----Charity Stories------>
+
+               <section class="stories">
+
+                  <div class="row">
+                           <div class="stories-left">
+                              <img src="images/community_based_food_programme.jpg" alt="Siza Program - Community-Based Food Program">
+                              <h2>Siza program charity stories</h2>
+                              <p>In Emalahleni, the NGO "Siza Program" has embarked on a profound mission to combat hunger and transform lives through their specialized feeding program. Their journey led them to the destitute community of Marikana, where hope and food had become scarce commodities. Generations of families in this community had endured the relentless grip of poverty. The Siza Program, armed with compassion and nourishment, established a community kitchen, providing hot, nutritious meals to Marikana's residents. Day by day, the impact of their work rippled through the community. Children who once struggled to focus in school began to thrive with full bellies and brighter smiles. Empowered by relief from hunger, parents explored new opportunities for economic stability. In the nurturing embrace of the Siza Program's feeding program, Marikana started to transform, demonstrating that even in dire circumstances, compassion and sustenance could spark hope and positive change.</p>
+                              <p>The Siza Program didn't stop at providing meals alone. They understood that true empowerment came through education. To break the cycle of hunger, they launched an extensive nutrition education program in Marikana. Regular community workshops became the norm, where residents of all ages gathered to learn about the importance of balanced diets, vitamins, and the value of fresh produce. The Siza Program's nutrition educators worked tirelessly, teaching families how to make the most of the food they received, ensuring that every meal was a source of nourishment and vitality. As knowledge spread, so did a newfound sense of empowerment. Families began planting their vegetable gardens, creating a sustainable source of nutrition. With nourishing meals and valuable education, Marikana flourished, showing that the Siza Program's mission extended beyond filling stomachs—it was about equipping individuals with the tools to lead healthier, happier lives.</p>
+                              <p>The ripple effects of the Siza Program's nutrition education were remarkable. As Marikana residents embraced healthier eating habits, they experienced improved overall health. A diet rich in nutrients led to a significant reduction in malnutrition-related illnesses. Children who once suffered from stunted growth thrived, showing energy and vitality in their enthusiasm for school and play. Moreover, cases of chronic diseases like diabetes and hypertension declined. With good nutrition as their foundation, the community enjoyed better immune systems, effectively fending off common illnesses. The Siza Program's holistic approach, combining nutrition education with nourishing meals, not only lifted the community out of hunger but also ushered in an era of good health and well-being, highlighting the transformative power of knowledge and the impact of good nutrition.</p>
+                          </div>
+                                       <br />
+                                       
+                           </div>
+                          
+          
+                  </div>
+
+               </section>
+   
+
+            <!-----Footer------>
+
+            <section class="footer">
+                     <h4>About Us</h4>
+                     <p>The <b>Siza program</b> takes an innovative approach to helping people emerge from poverty by providing nutritious meals to disadvantaged communities in South Africa, Mpumalanga. <br />
+                     </p> 
+                        <div class="icons">
+                              <i class="fa fa-facebook"></i>
+                              <i class="fa fa-instagram"></i>
+                        </div>
+                        <p align="center"><b>SIZA PROGRAM</b></p>
+                        <p align="center">siza@gmail.com</p>
+                        <p align="center">Phone number: 063 610 9536</p>
+                        <p align="center">Address: Broodryk street<br />
+                                                          10<br />
+                                                       Reyno Ridge<br />
+                                                           1049<br />
+                                                        Emalahleni<br />
+                                                       South africa</p>
+            </section>
+
+
+             <!-----JavaScript for toggle menu------>
+
+             <script>
+                     var navLinks = document.getElementById("navLinks");
+                     function showMenu(){
+                        navLinks.style.right = "0";
+                     }
+                     function hideMenu(){
+                        navLinks.style.right = "-200px";
+                     }
+             </script>
+      </body>
+</html>
